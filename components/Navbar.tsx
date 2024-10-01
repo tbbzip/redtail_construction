@@ -71,37 +71,37 @@ const Navbar = () => {
         >
           <div className="flex flex-col md:flex-row md:mx-6 lg:flex-row lg:space-x-6">
             <a
-              className="my-2 text-black transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
               href="#"
             >
               Home
             </a>
             <a
-              className="my-2 text-black transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
               href="#solutions"
             >
               Solution
             </a>
             <a
-              className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
               href="#industries"
             >
               Industries we serve
             </a>
             <a
-              className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
               href="#testimonials"
             >
               Testimonials
             </a>
             <a
-              className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
               href="#pricing"
             >
               Pricing
             </a>
             <a
-              className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-300 lg:my-0"
               href="#contact"
             >
               Contact
