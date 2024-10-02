@@ -1,5 +1,4 @@
 import Card from "@/components/Card";
-import Clients from "@/components/Clients";
 import ContactInfo from "@/components/ContactInfo";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
