@@ -8,6 +8,9 @@ import {
   FaChartLine,
   FaCarBurst,
 } from "react-icons/fa6";
+
+import { BsSpeedometer } from "react-icons/bs";
+
 import { IconType } from "react-icons";
 
 export interface FeatureType {
@@ -20,49 +23,55 @@ export const features: FeatureType[] = [
   {
     title: "Driver Behavior Monitoring",
     description:
-      "Improve driver safety and performance by tracking driving behaviors such as speed, harsh braking, and rapid acceleration. Receive alerts for unsafe driving practices and generate detailed behavior reports.",
+      "Enhance the safety of your rental fleet by monitoring renter driving behavior. Track key metrics like speed, harsh braking, and rapid acceleration to ensure that vehicles are driven responsibly. Receive alerts for unsafe driving to prevent potential damage or accidents.",
     icon: FaTruckFast,
   },
   {
-    title: "Vehicle Tracking",
+    title: "GPS Vehicle Tracking",
     description:
-      "Monitor your fleet in real-time with accurate GPS tracking. Get instant updates on vehicle locations, routes, and stops to enhance fleet visibility and ensure timely deliveries.",
+      "Keep track of your rental vehicles with GPS tracking. Know the exact location of each vehicle at all times, ensuring timely returns and preventing unauthorized use. Improve customer service by providing accurate vehicle availability information.",
     icon: FaMapLocation,
   },
   {
     title: "Crash Reconstruction",
     description:
-      "Accurately reconstruct vehicle collisions with detailed data from GPS tracking and onboard sensors. Analyze factors such as speed, braking patterns, and impact points to understand the events leading up to and during a crash.",
+      "Accurately analyze collisions involving your rental vehicles with comprehensive crash data. Reconstruct accidents using detailed information on speed, braking, and impact points, helping to resolve claims and reduce liability risks.",
     icon: FaCarBurst,
   },
   {
-    title: "Maintenance Scheduling",
+    title: "Automated Maintenance Scheduling",
     description:
-      "Keep your fleet in top condition with automated maintenance reminders and scheduling. Track vehicle health and schedule maintenance based on mileage, engine hours, or specific time intervals.",
+      "Extend the life of your rental fleet with automated maintenance scheduling. Track vehicle health and schedule maintenance based on usage, ensuring that vehicles are well-maintained and minimizing unexpected downtime.",
     icon: FaToolbox,
   },
   {
     title: "Geofencing",
     description:
-      "Set up virtual boundaries (geofences) to monitor vehicle entry and exit in specific areas. Receive instant alerts when vehicles enter or leave designated zones, enhancing security and compliance.",
+      "Define virtual boundaries around your rental locations to monitor vehicle entry and exit. Receive instant alerts if a vehicle leaves designated areas, ensuring compliance with rental agreements and enhancing security.",
     icon: FaGlobe,
   },
   {
     title: "Stolen Vehicle Recovery",
     description:
-      "Increase the chances of recovering stolen vehicles with real-time GPS tracking. Receive instant alerts if a vehicle is moved without authorization and provide law enforcement with precise location data to facilitate quick and efficient recovery.",
+      "Safeguard your rental fleet from theft with tracking and alerts for unauthorized movement. Improve the chances of recovering stolen vehicles quickly and efficiently, reducing potential losses.",
     icon: FaLocationPinLock,
   },
   {
-    title: "Insurance Savings",
+    title: "Insurance Premium Reduction",
     description:
-      "Potentially lower your insurance premiums by informing your provider that your fleet is equipped with GPS tracking devices. Demonstrating enhanced fleet security and driver monitoring can lead to significant savings.",
+      "Reduce your insurance costs by demonstrating enhanced vehicle security and driver monitoring. Telematics data can help lower premiums by showing insurers that your fleet is equipped with GPS tracking and driver behavior monitoring.",
     icon: FaDollarSign,
   },
   {
-    title: "Comprehensive Reporting",
+    title: "Detailed Fleet Reporting",
     description:
-      "Gain insights into your fleet performance with detailed reports and analytics. Customize reports to track key metrics, identify trends, and make data-driven decisions to improve fleet efficiency and reduce costs.",
+      "Access comprehensive reports on fleet usage, rental duration, and vehicle performance. Use data analytics to make informed decisions on fleet management, improve vehicle utilization, and reduce operational costs.",
     icon: FaChartLine,
+  },
+  {
+    title: "High-Speed Alerts",
+    description:
+      "Receive instant alerts when a rental vehicle exceeds safe speed limits. High-speed alerts help protect your fleet by encouraging renters to drive responsibly, reducing the risk of accidents and minimizing wear and tear on your vehicles.",
+    icon: BsSpeedometer,
   },
 ];
