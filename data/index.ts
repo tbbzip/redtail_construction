@@ -161,54 +161,55 @@ export interface FAQItem {
 
 export const faqs: FAQItem[] = [
   {
-    question: "What is telematics and how does it benefit my car rental business?",
+    question: "What is telematics and how does it benefit my construction business?",
     answer:
-      "Telematics refers to the use of GPS and onboard diagnostics to monitor vehicle location, speed, driving behavior, and more. For a car rental business, telematics provides real-time insights into fleet performance, vehicle health, and driver behavior, allowing you to optimize vehicle usage, reduce maintenance costs, and enhance customer safety.",
+      "Telematics refers to the use of GPS and onboard diagnostics to monitor the location, usage, and health of your construction vehicles and equipment. For a construction business, telematics provides real-time insights into asset performance, operator behavior, and maintenance needs, helping you optimize equipment usage, reduce downtime, and enhance job site security.",
   },
   {
-    question: "How can telematics help reduce my operational costs?",
+    question: "How can telematics help reduce operational costs in construction?",
     answer:
-      "Telematics can help reduce costs by providing real-time data on vehicle health and driving habits, which helps identify issues early and reduce wear and tear. It also allows you to monitor fuel consumption, ensure proper vehicle usage, and prevent unauthorized vehicle use, all contributing to lower operational expenses.",
+      "Telematics can help reduce operational costs by providing data on equipment health and usage patterns, which allows you to schedule proactive maintenance, reducing unexpected breakdowns. It also tracks fuel consumption, prevents unauthorized equipment use, and helps optimize job site operations, ultimately lowering fuel and repair costs while increasing productivity.",
   },
   {
-    question: "How do I set up telematics devices in my rental fleet?",
+    question: "How do I set up telematics devices on construction equipment?",
     answer:
-      "To set up telematics devices in your rental fleet, you need to purchase compatible GPS tracking devices. Install the devices in your vehicles by following the provided instructions. Once installed, use the telematics platform or app to activate and monitor each vehicle in your fleet.",
+      "To set up telematics devices on your construction vehicles and equipment, purchase compatible GPS or telematics devices and follow the manufacturer’s installation instructions. After installation, activate the devices via the telematics platform to start tracking equipment and monitoring its performance in real-time.",
   },
   {
-    question: "Can telematics improve my fleet’s security?",
+    question: "Can telematics improve the security of my construction equipment?",
     answer:
-      "Yes, telematics can significantly improve fleet security. With real-time tracking, you can monitor the location of your vehicles at all times, receive alerts for unauthorized use, and recover stolen vehicles more quickly. Geofencing can also be used to define areas where vehicles are allowed, triggering alerts if they exit the defined zones.",
+      "Yes, telematics significantly enhances equipment security. You can track the location of your machinery in real-time, receive alerts for unauthorized use, and recover stolen equipment more quickly. Geofencing allows you to create boundaries around job sites, with alerts triggered if equipment moves outside the designated zones, ensuring better security and control.",
   },
   {
-    question: "How does telematics enhance the customer experience for car rentals?",
+    question: "How does telematics improve job site efficiency?",
     answer:
-      "Telematics enhances the customer experience by ensuring vehicles are well-maintained and safe. You can also offer customers added features such as GPS navigation, roadside assistance, and real-time updates on vehicle condition. Additionally, telematics can streamline the check-in and check-out process by ensuring vehicle status is up to date, making rentals quicker and more efficient.",
+      "Telematics improves job site efficiency by providing real-time data on equipment location and usage, helping you allocate resources more effectively. You can monitor equipment status, reduce idle time, and optimize fleet utilization. This leads to better coordination between sites, reduced delays, and increased productivity.",
   },
   {
-    question: "What type of data can I track with telematics?",
+    question: "What type of data can I track with telematics for construction equipment?",
     answer:
-      "Telematics allows you to track a wide range of data, including real-time vehicle location, fuel consumption, mileage, driving behavior (speeding, harsh braking, etc.), and vehicle health diagnostics. This data is invaluable for managing your rental fleet efficiently and ensuring your vehicles are in optimal condition.",
+      "Telematics allows you to track data such as real-time location, equipment usage, fuel consumption, operator behavior (e.g., harsh acceleration or speeding), engine health diagnostics, and maintenance needs. This data is crucial for managing fleet performance, maintaining equipment longevity, and improving safety on job sites.",
   },
   {
-    question: "Can telematics help reduce insurance premiums for my rental fleet?",
+    question: "Can telematics help reduce insurance premiums for my construction fleet?",
     answer:
-      "Yes, many insurance providers offer discounts for fleets that utilize telematics, as it promotes safer driving and reduces risk. By monitoring driver behavior and providing data on vehicle usage, you can demonstrate that your fleet is well-managed, potentially leading to lower insurance premiums.",
+      "Yes, telematics can potentially help reduce your insurance premiums. By monitoring operator behavior and providing real-time data on equipment usage and security, you can demonstrate that your fleet is well-managed and secure, which may lead to lower insurance premiums.",
   },
   {
-    question: "How do I access telematics data for my rental vehicles?",
+    question: "How do I access telematics data for my construction vehicles and equipment?",
     answer:
-      "Accessing telematics data is simple. You can log into the telematics platform via a web dashboard or mobile app. From there, you can view real-time data on vehicle location, performance, and driver behavior, as well as access reports for analysis and decision-making.",
+      "You can access telematics data through a web dashboard or mobile app provided by the telematics platform. From there, you can view real-time information on equipment location, performance, and operator behavior, as well as generate reports to help with decision-making and project management.",
   },
   {
-    question: "How can telematics help with maintenance scheduling?",
+    question: "How can telematics help with maintenance scheduling for construction equipment?",
     answer:
-      "Telematics provides real-time data on vehicle health, including engine diagnostics, mileage, and usage patterns. With this information, you can schedule maintenance proactively, preventing breakdowns and reducing downtime, ensuring that your vehicles are always ready for rental.",
+      "Telematics provides real-time data on equipment health, including engine diagnostics, operating hours, and usage patterns. This information helps you schedule maintenance proactively, preventing breakdowns, minimizing job site downtime, and extending the lifespan of your machinery.",
   },
   {
-    question: "What kind of customer support is available for telematics setup and maintenance?",
+    question: "What kind of customer support is available for telematics setup and maintenance in construction?",
     answer:
-      "Our customer support team is available to assist you with the setup, maintenance, and troubleshooting of your telematics devices. Support is provided from Monday to Friday, 9:00 AM to 6:00 PM, and for urgent issues, you can contact us via email or phone for prompt assistance.",
+      "Our dedicated support team is available to assist with the setup, maintenance, and troubleshooting of telematics devices for your construction fleet. Support is available Monday to Friday, 9:00 AM to 6:00 PM, with emergency assistance available via email or phone for urgent issues.",
   },
 ];
+
 

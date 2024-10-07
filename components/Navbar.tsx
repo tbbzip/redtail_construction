@@ -90,6 +90,12 @@ const Navbar = () => {
             </a>
             <a
               className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-100 lg:my-0"
+              href="#roi"
+            >
+              ROI Calculator
+            </a>
+            <a
+              className="my-2 text-black text-center transition-colors duration-300 transform hover:text-rb-100 lg:my-0"
               href="#pricing"
             >
               Pricing

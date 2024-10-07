@@ -23,55 +23,55 @@ export const features: FeatureType[] = [
   {
     title: "Driver Behavior Monitoring",
     description:
-      "Enhance the safety of your rental fleet by monitoring renter driving behavior. Track key metrics like speed, harsh braking, and rapid acceleration to ensure that vehicles are driven responsibly. Receive alerts for unsafe driving to prevent potential damage or accidents.",
+      "Enhance the safety of your construction fleet by monitoring driver behavior. Track critical metrics such as speed, harsh braking, and rapid acceleration to ensure that heavy equipment and vehicles are operated safely, reducing the risk of accidents and equipment damage.",
     icon: FaTruckFast,
   },
   {
-    title: "GPS Vehicle Tracking",
+    title: "GPS Vehicle & Equipment Tracking",
     description:
-      "Keep track of your rental vehicles with GPS tracking. Know the exact location of each vehicle at all times, ensuring timely returns and preventing unauthorized use. Improve customer service by providing accurate vehicle availability information.",
+      "Monitor the location of your construction vehicles and equipment in real-time with GPS tracking. Ensure assets are where they need to be, prevent unauthorized usage, and improve project efficiency by optimizing fleet movements across job sites.",
     icon: FaMapLocation,
   },
   {
     title: "Crash Reconstruction",
     description:
-      "Accurately analyze collisions involving your rental vehicles with comprehensive crash data. Reconstruct accidents using detailed information on speed, braking, and impact points, helping to resolve claims and reduce liability risks.",
+      "Analyze collisions involving your construction vehicles with detailed crash data. Reconstruct incidents with key information like speed, braking, and impact points, helping to reduce liability and resolve insurance claims more efficiently.",
     icon: FaCarBurst,
   },
   {
     title: "Automated Maintenance Scheduling",
     description:
-      "Extend the life of your rental fleet with automated maintenance scheduling. Track vehicle health and schedule maintenance based on usage, ensuring that vehicles are well-maintained and minimizing unexpected downtime.",
+      "Keep your construction equipment and vehicles in top condition with automated maintenance reminders. Track usage metrics such as engine hours and mileage to ensure timely maintenance, minimizing breakdowns and reducing costly downtime on job sites.",
     icon: FaToolbox,
   },
   {
     title: "Geofencing",
     description:
-      "Define virtual boundaries around your rental locations to monitor vehicle entry and exit. Receive instant alerts if a vehicle leaves designated areas, ensuring compliance with rental agreements and enhancing security.",
+      "Set up virtual boundaries around job sites to monitor vehicle and equipment entry and exit. Receive alerts when assets move outside of designated areas, enhancing security and ensuring that vehicles and machinery are used only within authorized zones.",
     icon: FaGlobe,
   },
   {
-    title: "Stolen Vehicle Recovery",
+    title: "Stolen Vehicle & Equipment Recovery",
     description:
-      "Safeguard your rental fleet from theft with tracking and alerts for unauthorized movement. Improve the chances of recovering stolen vehicles quickly and efficiently, reducing potential losses.",
+      "Increase the chances of recovering stolen construction equipment and vehicles with real-time GPS tracking. Get alerts for unauthorized movements and provide law enforcement with precise location data to recover stolen assets quickly.",
     icon: FaLocationPinLock,
   },
   {
     title: "Insurance Premium Reduction",
     description:
-      "Reduce your insurance costs by demonstrating enhanced vehicle security and driver monitoring. Telematics data can help lower premiums by showing insurers that your fleet is equipped with GPS tracking and driver behavior monitoring.",
+      "Lower your insurance premiums by proving enhanced asset security and driver behavior monitoring. Telematics solutions can demonstrate improved safety measures and vehicle tracking, leading to potential cost reductions for construction businesses.",
     icon: FaDollarSign,
   },
   {
     title: "Detailed Fleet Reporting",
     description:
-      "Access comprehensive reports on fleet usage, rental duration, and vehicle performance. Use data analytics to make informed decisions on fleet management, improve vehicle utilization, and reduce operational costs.",
+      "Access in-depth reports on the usage of construction vehicles and equipment. Use these analytics to monitor project efficiency, optimize asset utilization, and identify areas for cost savings, making data-driven decisions to improve overall operations.",
     icon: FaChartLine,
   },
   {
     title: "High-Speed Alerts",
     description:
-      "Receive instant alerts when a rental vehicle exceeds safe speed limits. High-speed alerts help protect your fleet by encouraging renters to drive responsibly, reducing the risk of accidents and minimizing wear and tear on your vehicles.",
+      "Receive alerts when your construction vehicles exceed safe speed limits, especially on and around job sites. High-speed alerts help protect equipment, prevent accidents, and encourage safer operation of heavy machinery.",
     icon: BsSpeedometer,
   },
 ];

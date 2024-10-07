@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Car Rental Tracking Solution - Redtail Telematics",
-  description: "Optimize your car rental business with advanced telematics solutions. Monitor driver behavior, track vehicles in real-time, receive high-speed alerts, automate maintenance, enhance security with geofencing, and recover stolen vehicles with GPS tracking. Improve fleet efficiency and reduce costs with detailed reporting and potential insurance savings.",
+  title: "Construction Fleet Tracking Solution - Redtail Telematics",
+  description: "Optimize your construction business with advanced telematics solutions. Monitor equipment and vehicle usage, track assets in real-time, receive alerts for unauthorized movement, automate maintenance scheduling, enhance job site security with geofencing, and recover stolen equipment with GPS tracking. Improve fleet efficiency, reduce downtime, and lower operational costs with detailed reporting and data insights.",
 };
+
 
 export default function RootLayout({
   children,
