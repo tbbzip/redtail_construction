@@ -16,10 +16,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Card />
-      <Pricing />
+      <ROICalculator />
       <CTA />
       <FAQ faqs={faqs} title="Frequently Asked Questions" />
-      <ROICalculator />
       <ContactForm />
       <ContactInfo />
       <Footer />

@@ -19,38 +19,38 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
             <a
               href="#"
-              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-300"
+              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-100"
               aria-label="Home"
             >
               Home
             </a>
             <a
               href="#solutions"
-              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-300"
+              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-100"
               aria-label="Solution"
             >
               Solution
             </a>
             <a
-              href="#industries"
-              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-300"
-              aria-label="Industries"
+              href="#roi"
+              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-100"
+              aria-label="ROI Calculator"
             >
-              Industries
+              ROI Calculator
             </a>
             <a
               href="#testimonials"
-              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-300"
+              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-100"
               aria-label="Testimonials"
             >
               Testimonials
             </a>
             <a
-              href="#pricing"
-              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-300"
-              aria-label="Pricing"
+              href="#contact"
+              className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-rb-100"
+              aria-label="Contact Us"
             >
-              Pricing
+              Contact Us
             </a>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                 key={info.id}
                 href={info.url}
                 target="_blank"
-                className="mx-2 text-gray-600 transition-colors duration-300 hover:text-rb-300"
+                className="mx-2 text-gray-600 transition-colors duration-300 hover:text-rb-100"
               >
                 <info.Icon size={20} />
               </a>

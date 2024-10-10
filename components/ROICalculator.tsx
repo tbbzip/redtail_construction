@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { Doughnut } from "react-chartjs-2"; // Import Doughnut from react-chartjs-2
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import React, { useState, useEffect } from 'react';
+import { Doughnut } from 'react-chartjs-2'; // Import Doughnut from react-chartjs-2
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
 // Register necessary Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -10,7 +10,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 // Define the types for the calculator's state
 interface CalculatorState {
   fleetSize: number;
-  roi: number | null;
+  roi: number;
   fuelSavings: number;
   maintenanceSavings: number;
   safetySavings: number;
@@ -20,8 +20,8 @@ interface CalculatorState {
 const ROICalculator: React.FC = () => {
   // Initialize state with default values
   const [state, setState] = useState<CalculatorState>({
-    fleetSize: 10, // Default fleet size
-    roi: null,
+    fleetSize: 1, // Default fleet size
+    roi: 0, // Default ROI as 0 to display the chart initially
     fuelSavings: 0,
     maintenanceSavings: 0,
     safetySavings: 0,
@@ -30,11 +30,16 @@ const ROICalculator: React.FC = () => {
 
   const [error, setError] = useState<string | null>(null); // For validation error messages
 
+  // Automatically calculate ROI and savings when the fleet size changes
+  useEffect(() => {
+    calculateROI();
+  }, [state.fleetSize]);
+
   // Function to handle fleet size input change
   const handleFleetSizeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);
     if (isNaN(value) || value <= 0) {
-      setError("Please enter a valid fleet size (positive number).");
+      setError('Please enter a valid fleet size (positive number).');
       setState({ ...state, fleetSize: 0 });
     } else {
       setError(null); // Clear the error if the input is valid
@@ -47,7 +52,7 @@ const ROICalculator: React.FC = () => {
     const { fleetSize } = state;
 
     if (fleetSize <= 0) {
-      setError("Fleet size must be greater than 0.");
+      setError('Fleet size must be greater than 0.');
       return;
     }
 
@@ -71,8 +76,7 @@ const ROICalculator: React.FC = () => {
     const productivitySavings = fleetSize * productivitySavingsPerVehicle; // total productivity savings
 
     // Total savings
-    const totalSavings =
-      fuelSavings + maintenanceSavings + safetySavings + productivitySavings;
+    const totalSavings = fuelSavings + maintenanceSavings + safetySavings + productivitySavings;
 
     // ROI calculation
     const roi = (totalSavings / investmentCost) * 100;
@@ -91,10 +95,10 @@ const ROICalculator: React.FC = () => {
   // Prepare data for the Doughnut chart with brand colors
   const doughnutData = {
     labels: [
-      "Fuel Savings",
-      "Maintenance Savings",
-      "Safety/Insurance Savings",
-      "Productivity Savings",
+      'Fuel Savings',
+      'Maintenance Savings',
+      'Safety/Insurance Savings',
+      'Productivity Savings',
     ],
     datasets: [
       {
@@ -104,27 +108,19 @@ const ROICalculator: React.FC = () => {
           state.safetySavings,
           state.productivitySavings,
         ],
-        backgroundColor: ["#CF1317", "#82BC40", "#3DBBD3", "#FFCE56"], // Brand colors for each category
-        hoverBackgroundColor: ["#CF1317", "#82BC40", "#3DBBD3", "#FFCE56"],
+        backgroundColor: ['#CF1317', '#82BC40', '#3DBBD3', '#FFCE56'], // Brand colors for each category
+        hoverBackgroundColor: ['#CF1317', '#82BC40', '#3DBBD3', '#FFCE56'],
       },
     ],
   };
 
   return (
-    <div
-      className="max-w-md mx-auto mt-10 mb-10 bg-white p-8 rounded-lg shadow-md"
-      id="roi"
-    >
-      <h2 className="text-3xl font-semibold text-center mb-6">
-        ROI Calculator
-      </h2>
+    <div className="max-w-md mx-auto mt-10 mb-10 p-8 rounded-2xl shadow-md" id="roi">
+      <h2 className="text-4xl font-bold text-center mb-6">ROI Calculator</h2>
 
       <form className="space-y-4">
         <div className="flex flex-col">
-          <label
-            htmlFor="fleetSize"
-            className="mb-2 text-sm font-medium text-gray-700"
-          >
+          <label htmlFor="fleetSize" className="mb-2 text-base font-medium text-gray-700">
             Enter Your Fleet Size:
           </label>
           <input
@@ -135,7 +131,7 @@ const ROICalculator: React.FC = () => {
             placeholder="e.g., 10"
             required
             className={`px-4 py-2 border ${
-              error ? "border-red-500" : "border-gray-300"
+              error ? 'border-red-500' : 'border-gray-300'
             } rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500`}
           />
           {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
@@ -147,55 +143,50 @@ const ROICalculator: React.FC = () => {
           disabled={state.fleetSize <= 0} // Disable button if input is invalid
           className={`w-full px-4 py-2 text-white font-semibold rounded-lg ${
             state.fleetSize <= 0
-              ? "bg-gray-400 cursor-not-allowed"
-              : "bg-blue-600 hover:bg-blue-500 transition duration-200"
+              ? 'bg-gray-400 cursor-not-allowed'
+              : 'bg-rb-100 hover:bg-red-400 transition duration-200'
           }`}
         >
           Calculate ROI
         </button>
       </form>
 
-      {/* Display the results if ROI has been calculated */}
-      {state.roi !== null && (
-        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-          <p className="text-lg font-semibold">Results</p>
-          <p className="mt-2 text-sm">
-            Your estimated ROI is: <strong>{state.roi.toFixed(2)}%</strong>
-          </p>
-          <p className="mt-2 text-sm">
-            Fuel Savings: <strong>${state.fuelSavings.toFixed(2)}</strong>
-          </p>
-          <p className="mt-2 text-sm">
-            Maintenance Savings:{" "}
-            <strong>${state.maintenanceSavings.toFixed(2)}</strong>
-          </p>
-          <p className="mt-2 text-sm">
-            Safety/Insurance Savings:{" "}
-            <strong>${state.safetySavings.toFixed(2)}</strong>
-          </p>
-          <p className="mt-2 text-sm">
-            Productivity Savings:{" "}
-            <strong>${state.productivitySavings.toFixed(2)}</strong>
-          </p>
+      {/* Display the Doughnut chart and results */}
+      <div className="mt-6 p-4 bg-blue-100 rounded-lg">
+        <p className="text-xl font-semibold">Results</p>
+        <p className="mt-2 text-sm">
+          Your estimated ROI is: <strong>{state.roi.toFixed(2)}%</strong>
+        </p>
+        <p className="mt-2 text-sm">
+          Fuel Savings: <strong>${state.fuelSavings.toFixed(2)}</strong>
+        </p>
+        <p className="mt-2 text-sm">
+          Maintenance Savings: <strong>${state.maintenanceSavings.toFixed(2)}</strong>
+        </p>
+        <p className="mt-2 text-sm">
+          Safety/Insurance Savings: <strong>${state.safetySavings.toFixed(2)}</strong>
+        </p>
+        <p className="mt-2 text-sm">
+          Productivity Savings: <strong>${state.productivitySavings.toFixed(2)}</strong>
+        </p>
 
-          {/* Display the Doughnut chart */}
-          <div className="mt-6">
-            <Doughnut data={doughnutData} />
-          </div>
-
-          {/* Add the small legend below the chart */}
-          <div className="mt-4 text-xs text-gray-600 text-center">
-            <p>This is the average ROI our customers typically experience.</p>
-            <p>
-              For more precise and detailed ROI data,{" "}
-              <a href="#contact" className="text-blue-500 underline">
-                contact us
-              </a>
-              .
-            </p>
-          </div>
+        {/* Display the Doughnut chart */}
+        <div className="mt-6">
+          <Doughnut data={doughnutData} />
         </div>
-      )}
+
+        {/* Add the small legend below the chart */}
+        <div className="mt-4 text-xs text-black text-center">
+          <p>This is the average ROI our customers typically experience.</p>
+          <p>
+            For more precise and detailed ROI data,{' '}
+            <a href="#contact" className="text-blue-500 underline">
+              contact us
+            </a>
+            .
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

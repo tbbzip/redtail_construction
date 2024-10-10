@@ -15,9 +15,9 @@ interface FeatureProps {
 const Card = () => {
   return (
     <div className="max-w-7xl mx-auto mt-2 py-10" id="solutions">
-      <h1 className="heading mb-10 leading-relaxed text-black text-4xl font-bold text-center relative z-20">
-        Our <span className="text-rb-100">Solution</span> for Your Construction Business
-      </h1>
+      <h2 className="heading mb-10 leading-relaxed text-black text-4xl font-bold text-center relative z-20">
+        Our <span className="text-rb-100">Solution</span> For Your Construction Business
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 py-10 gap-6">
         {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />

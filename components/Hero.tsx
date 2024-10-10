@@ -45,8 +45,8 @@ const HeroContent: React.FC = () => (
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative w-full h-[50rem] overflow-hidden">
-      <VideoBackground src="construction_video.mp4" />
+    <div className="relative w-full h-[55rem] overflow-hidden">
+      <VideoBackground src="construction.mp4" />
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <HeroContent />
     </div>

@@ -22,9 +22,9 @@ const FAQ: React.FC<FAQProps> = ({ faqs, title }) => {
   return (
     <section className="bg-white">
       <div className="container max-w-4xl px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-center text-gray-900 lg:text-3xl">
+        <h2 className="text-2xl font-semibold text-center text-gray-900 lg:text-3xl">
           {title || "Frequently Asked Questions"}
-        </h1>
+        </h2>
 
         <div className="mt-12 space-y-8">
           {faqs.map((faq, index) => (
@@ -36,9 +36,9 @@ const FAQ: React.FC<FAQProps> = ({ faqs, title }) => {
                 onClick={() => toggleFAQ(index)}
                 className="flex items-center justify-between w-full p-6 lg:p-8 text-left"
               >
-                <h1 className="font-semibold text-gray-900">
+                <h3 className="font-semibold text-gray-900">
                   {faq.question}
-                </h1>
+                </h3>
 
                 <span
                   className={`text-gray-900 bg-gray-300 rounded-full transform transition-transform duration-300 ${
