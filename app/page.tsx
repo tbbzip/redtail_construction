@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import { ContactForm } from "@/components/Form";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Pricing from "@/components/Pricing";
 import ROICalculator from "@/components/ROICalculator";
 import { faqs } from "@/data";
 
